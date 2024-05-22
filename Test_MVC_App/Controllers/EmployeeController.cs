@@ -12,11 +12,23 @@ namespace Test_MVC_App.Controllers
 
         public ActionResult Index()
         {
+            //Lets create list department for dropdownlist
+            List<Department> ListDepartments = new List<Department>()
+            {
+                new Department() {Id = 1, Name="IT" },
+                new Department() {Id = 2, Name="HR" },
+                new Department() {Id = 3, Name="Payroll" },
+            };
+            ViewBag.Departments = ListDepartments;
+            //lets create one employee
             Employee emp = new Employee()
             {
                 EmployeeId = 1,
-                Address = "Andheri, Sakinaka, Mumbai, 400097, Maharashtra, India"
+                Name = "Pranaya",
+                Gender = "Male",
+                DepartmentID = 1
             };
+            //Pass that employee to the view
             return View(emp);
         }
 

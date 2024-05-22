@@ -1,3 +1,6 @@
 ﻿@model Test_MVC_App.Models.Employee
 
-@Html.TextAreaFor(model => model.Address, new { @class = "form-control" })
+@Html.DropDownList("Department",
+                    new SelectList(ViewBag.Departments, "Id", "Name"),
+                    "Select Department",
+                    new { @class = "form-control" })

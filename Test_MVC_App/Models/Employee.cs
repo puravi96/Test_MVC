@@ -15,5 +15,7 @@ namespace Test_MVC_App.Models
         public string Gender { get; set; }
         public decimal Salary { get; set; }
         public int AddressId { get; set; }
+
+        public int DepartmentID { get; set; }
     }
 }
