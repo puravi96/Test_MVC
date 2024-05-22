@@ -1,1 +1,48 @@
+# Visual Studio specific files
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# User-specific files
+*.rsuser
+*.rsuser*
+*.sln.docstates
+
+# IIS Express
+.vsconfig
+.vs/Server/
+
+# Web.config files
+Web.config
+Web.Debug.config
+Web.Release.config
+
+# Publish directory
+publish/
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# Node.js dependencies
+node_modules/
+
+# JetBrains Rider
+.idea/
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Log files
+*.log
+
+# Others
+Thumbs.db
+desktop.ini
  

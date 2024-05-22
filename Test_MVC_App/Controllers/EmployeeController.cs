@@ -9,6 +9,17 @@ namespace Test_MVC_App.Controllers
 {
     public class EmployeeController : Controller
     {
+
+        public ActionResult Index()
+        {
+            Employee emp = new Employee()
+            {
+                EmployeeId = 1,
+                Address = "Andheri, Sakinaka, Mumbai, 400097, Maharashtra, India"
+            };
+            return View(emp);
+        }
+
         public ActionResult Details()
         {
             //Employee Basic Details
